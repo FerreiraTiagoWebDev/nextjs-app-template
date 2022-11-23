@@ -14,11 +14,20 @@ module.exports = {
       xl: "1536px",
     },
     fontFamily: {
-      sans: ["Arial", "sans-serif"],
-      serif: ["Garamond", "serif"],
+      primary: ["Comfortaa", "cursive"],
+      secondary: ["Graphik", "sans-serif"],
     },
     extend: {
       colors: {
+        navbar: {
+          main: "#D8C99B",
+        },
+        background: {
+          main: "#faf5e6",
+        },
+        footer: {
+          main: "#273e47",
+        },
         blue: {
           500: "#1a73e8",
         },

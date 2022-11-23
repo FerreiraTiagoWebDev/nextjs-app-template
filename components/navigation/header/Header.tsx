@@ -1,30 +1,16 @@
-import Link from "next/link";
-import AuthButton from "../../buttons/auth/AuthButton";
-
 export interface IHeader extends React.ComponentPropsWithoutRef<"header"> {}
 
 const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
   return (
-    <header
-      {...headerProps}
-      className={`w-full flex flex-row justify-between ${className}`}
-    >
-      <div className="space-x-5 m-5">
-        <Link href="/" className="hover:underline">
-          Home
-        </Link>
-        <Link href="/" className="hover:underline">
-          Store
-        </Link>
-      </div>
-      <div className="space-x-5 m-5">
-        <Link href="/" className="hover:underline hidden sm:inline">
-          Gmail
-        </Link>
-        <Link href="/" className="hover:underline hidden sm:inline">
-          Images
-        </Link>
-        <AuthButton />
+    <header {...headerProps}>
+      <div className="bg-navbar-main w-full h-24 flex items-center justify-between ">
+        <div className="m-3">Logo</div>
+        <div className="flex items-center justify-center">
+          <div className="m-3">Link One</div>
+          <div className="m-3">Link One</div>
+          <div className="m-3">Link One</div>
+        </div>
+        <div className="m-3">Another Link</div>
       </div>
     </header>
   );
